@@ -1,0 +1,7 @@
+[options]
+font = Monospace 6
+font = xos4 Terminus 20px
+font = Source code pro regular 10
+
+[colors]
+background = rgba(0, 0, 0, 0.6)

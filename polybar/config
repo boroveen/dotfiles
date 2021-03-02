@@ -1,0 +1,80 @@
+[bar/mybar]
+modules-right = wireless-network memory1 memory cpu1 cpu
+modules-center = date
+modules-left = i3 title
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+separator = |
+separator-padding = 2
+separator-foreground = #ffb52a
+
+[module/i3]
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+
+;fuzzy-match = true
+
+label-focused =  %index%
+label-focused-foreground = #ffffff
+label-focused-background = #006306
+label-focused-underline = #00ab08
+label-focused-padding = 1
+
+label-separator = |
+label-separator-padding = 2
+label-separator-foreground = #ffb52a
+
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+ping-interval = 10
+format-connected = <label-connected> <ramp-signal>
+label-connected = ip: %local_ip% signal:
+;label-connected-foreground = #aaff77
+label-disconnected = not connected
+label-disconnected-foreground = #66
+
+ramp-signal-0 = 0
+ramp-signal-0-foreground = #ff5555
+ramp-signal-1 = 1
+ramp-signal-1-foreground = #ff5555
+ramp-signal-2 = 2
+ramp-signal-2-foreground = #fba922
+ramp-signal-3 = 3
+ramp-signal-3-foreground = #aaff77
+ramp-signal-4 = 4
+ramp-signal-4-foreground = #aaff77
+
+[module/title]
+type = internal/xwindow
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %Y-%m-%d%
+time = %H:%M
+label = %date% %time%
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+[module/memory]
+type = internal/memory
+interval = 0.5
+
+[module/cpu1]
+type = internal/cpu
+interval = 0.5
+label = CPU:
+
+[module/memory1]
+type = internal/memory
+interval = 0.5
+label = RAM:
+

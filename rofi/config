@@ -1,0 +1,43 @@
+! Enabled modi
+rofi.modi:                           window,run,ssh
+! Window opacity
+rofi.opacity:                        100
+! Window width
+rofi.width:                         40
+! Number of lines
+rofi.lines:                         10
+! Number of columns
+rofi.columns:                       1
+! Font to use
+rofi.font:                           menlo 15
+rofi.color-enabled: true
+rofi.color-window: argb:05a5003f, argb:05a5003f, argb:05a5003f
+rofi.color-normal: argb:002f343f, #d8dee8, argb:002f343f, argb:002f343f, #05a500
+rofi.color-active: #2f343f, #b48ead, #2f343f, #2f343f, #93e5cc
+rofi.color-urgent: #2f343f, #ebcb8b, #2f343f, #2f343f, #ebcb8b
+! Border width
+rofi.bw:                             1
+! Location on screen
+rofi.location:                       0 
+! Padding
+rofi.padding:                        30
+! Y-offset relative to location
+rofi.yoffset:                        0
+! X-offset relative to location
+rofi.xoffset:                        0
+! Always show number of lines
+rofi.fixed-num-lines:               true
+! Terminal to use
+rofi.terminal:                       rofi-sensible-terminal
+! Ssh client to use
+rofi.ssh-client:                     ssh
+! Ssh command to execute
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+! Run command to execute
+rofi.run-command:                    {cmd}
+! Command to get extra run targets
+rofi.run-list-command:               
+! Run command to execute that runs in shell
+rofi.run-shell-command:              {terminal} -e {cmd}
+! Command executed on accep-entry-custom for window modus
+rofi.window-command:                 xkill -id {window}
