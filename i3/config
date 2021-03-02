@@ -32,7 +32,7 @@ exec --no-startup-id nm-applet
 
 exec feh --bg-scale ~/Downloads/a.jpg
 exec picom
-exec conky -c /home/toblack/tmp/i3-rice-rin-shelter/conky/conky.conf
+exec conky -c ~/.config/conky/conky.conf
 exec firefox
 exec termite
 
